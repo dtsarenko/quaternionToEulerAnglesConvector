@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'dnvc'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'ch.qos.logback:logback-classic:1.1.7'
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.apache.commons:commons-collections4:4.4'
+    compile 'org.apache.commons:commons-lang3:3.9'
+   
+    compile "org.projectlombok:lombok:1.18.12"
+
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
